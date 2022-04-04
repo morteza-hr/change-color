@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>web</title>
+    </head>
+    <body>
+     <p id="f" style="font-size: 40px;">change color</p>
+
+     <input type="button" value="green" id="green"/>
+     <input type="button" value="red" id="red"/>
+     <input type="button" value="blue" id="blue"/>
+     <input type="button" value="yellow" id="gray"/>
+
+     <script>
+       var p=document.getElementById("f");
+       var green=document.getElementById("green");
+       var red=document.getElementById("red");
+       var blue=document.getElementById("blue");
+       var yellow=document.getElementById("gray");
+
+
+       green.addEventListener("click" ,function(){
+           p.style.color="green";
+       });
+
+       red.addEventListener('click', function(){
+           p.style.color="red";
+       });
+
+       blue.addEventListener('click', function(){
+           p.style.color="blue";
+       })
+
+       yellow.addEventListener('click', function(){
+           p.style.color="gray";
+       })
+     </script>
+    </body>
+</html>
